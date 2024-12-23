@@ -1,0 +1,448 @@
+@media (max-width: 600px) {
+    .vl {
+        display: none;
+    }
+    .map {
+        min-width: 100%; /* Убираем фиксированную ширину для карты */
+    }
+}
+
+/* Настройки для мобильной версии */
+@media (max-width: 768px) {
+    
+    .table-container {
+        width: 50%;
+        overflow-x: auto; 
+    }
+    table {
+        overflow-x: scroll; /* Уменьшение шрифта для мобильных устройств */
+        width: 50%;
+        table-layout: auto;
+        min-width: 300px; 
+    }
+
+    th, td {
+        padding: 3px; /* Уменьшение отступов в ячейках */
+        white-space: nowrap;
+    }
+    .map {
+        overflow-x: scroll; /* Уменьшение шрифта для мобильных устройств */
+        width: 50%;
+    }
+
+    .scroll-top-btn {
+        padding: 10px 20px;
+    }
+
+    section {
+        padding: 20px;
+        margin-right: 0;
+    }
+    h1, h2 {
+        text-align: center; /* Выравнивание текста по центру */
+        font-size: 1.5rem; /* Можно уменьшить размер шрифта для мобильных устройств */
+    }
+}
+.vl {
+    border-left: 4px solid rgb(71, 117, 192);
+    height: 100vh;
+    margin: 0 20px;
+}
+
+@media (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* Две карточки */
+    }
+}
+
+/* Для мобильных устройств (меньше 768px) - одна карточка в ряд */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Одна карточка */
+    }
+}
+/* Стили для модального окна */ 
+.modal { 
+    display: none; /* Скрыто по умолчанию */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+} 
+
+.modal-content { 
+    background-color: #fefefe; 
+    width: 90%; /* Ширина адаптируется под разные экраны */
+    max-width: 400px; /* Максимальная ширина */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+} 
+
+.close { color: #aaa; /* Цвет кнопки закрытия */ 
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    cursor: pointer; 
+} .close:hover, 
+.close:focus {
+    color: black; 
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-left: 50px;
+
+}
+
+figure {
+    padding-right: 70px;
+    display: inline-block;
+}
+
+table {
+    width: 100%;
+    border-top: 7px solid rgb(62, 150, 188);
+    border-collapse: collapse;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+  }
+
+  td {
+    text-align: left;
+      padding: 10px;
+      border: 3px solid rgb(62, 150, 188);
+  }
+   th {
+    text-align: center;
+    padding: 8px;
+      border: 3px solid rgb(62, 150, 188);
+   }
+
+   ul {
+    margin: 10px;
+}
+
+body {
+    background: rgb(197, 220, 241);
+    color: #452323;
+}
+
+    header {
+        font-weight: bold;
+        background:#cecece;
+    }
+
+    a:active{
+        color:aquamarine;
+       
+    }
+
+    a {
+        text-decoration: none;
+        color:purple; 
+    } 
+    
+    .shadow-title {
+        font-size: 20px;
+        color: #000000;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    a {
+        color: rgb(172, 70, 185);
+        text-decoration: none;
+    }
+    
+    a:hover {
+        text-shadow:
+        0 0 1em white,
+        0 0 0.2em white;
+    }
+    
+    a:active {
+        text-shadow:
+        0 0 1em white;
+        color: #999;
+    }
+
+    .shadow-1{
+        box-shadow: 0px 0px 5px 5px #5e5b5b;
+    }
+
+body, html {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+}
+
+
+/* оформление картинок*/
+.mask{
+    --uiMaskClipPath: var(--maskClipPath);
+    box-sizing: var(--maskBoxSizing, border-box);
+    display: var(--maskDisplay, inline-flex);
+    padding: var(--maskStrokeThickness, 3px);
+    clip-path: var(--uiMaskClipPath);
+    background-color: var(--maskStrokeColor, currentColor);
+    --maskStrokeColor: #8357bc; /* Цвет рамки */
+    --maskStrokeThickness: 5px; /* Ширина рамки */ 
+}
+.mask-img{
+    max-width: 100%;
+    display: block;
+    clip-path: var(--uiMaskClipPath);
+}
+.mask, 
+.mask-img{
+    transition: clip-path var(--maskAnimationDuration, .2s) var(--maskAnimationTimingFunction, ease-out);
+}
+/* Первая рамка */
+.mask-one{
+    --maskClipPath: polygon(0 10%, 10% 0, 90% 0, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0 90%);
+}
+.mask-one-frame{
+    --maskAnimationDuration: .4s;
+}
+.mask-one:hover, 
+.mask-one:focus{
+    --maskClipPath: polygon(0 0, 100% 0, 100% 10%, 100% 100%, 90% 100%, 0% 100%, 0% 90%, 0% 10%);
+}
+/*конец картинки*/
+
+/*подсвет кнопки*/
+.button {
+    padding: 3px 15px;
+    margin: 15px;
+    cursor: pointer;
+    border: 0px;
+    background-color: #2e67f7;
+    font-size: 18px;
+    color: #000000;
+    box-shadow: 0 0 5px #FF00FF;
+    -moz-box-shadow: 0 0 5px #FF00FF;
+    -ms-box-shadow: 0 0 5px #FF00FF;
+    -o-box-shadow: 0 0 5px #FF00FF;
+    -webkit-box-shadow: 0 0 5px #FF00FF;
+}
+.button:hover {
+    box-shadow: 0 0 12px #67eacd;
+    -moz-box-shadow: 0 0 12px #67eacd;
+    -o-box-shadow: 0 0 12px #67eacd;
+    -ms-box-shadow: 0 0 12px #67eacd;
+    -webkit-box-shadow: 0 0 12px #67eacd;
+}
+/*конец кнопки*/
+
+
+/*таблица*/
+td:nth-child(odd) {
+
+    background-color: #83aade;/* фон нечетных столбцов */
+
+  }
+
+  td:nth-child(even) {
+
+    background-color: #1f6793;/* фон четных столбцов */
+
+  }
+
+  tr:hover td{
+
+    background: #B4FFF2;/* фон строки при наведении */
+
+  }
+/*конец таблицы*/
+
+/*оформление заголовков*/
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Автоматические колонки */
+    gap: 20px; /* Отступы между карточками */
+    margin: 50px;
+    align-items: start; /* Выравниваем элементы по верхнему краю */
+}
+
+
+section {
+    display: inline-block;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-right: 50px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*меню*/
+header ul {
+    display: flex;
+    justify-content: space-around; /* Равномерное распределение элементов */
+    list-style-type: none; /* Убираем маркеры */
+    padding: 0;
+}
+
+header ul a {
+    text-decoration: none;
+    padding: 0;
+    color: rgb(172, 70, 185); /* Цвет текста */
+    text-align: center;
+}
+
+
+/*фиксация меню*/
+nav {
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/*кнопка наверх*/
+.scroll-top-btn {
+    position: fixed; /* Фиксированное положение */
+    bottom: 20px; /* Отступ от нижней грани */
+    right: 20px; /* Отступ от правой грани */
+    display: none; /* Скрываем кнопку по умолчанию */
+    background-color: #007bff; /* Цвет фона */
+    color: white; /* Цвет текста */
+    border: none; /* Убираем рамку */
+    border-radius: 5px; /* Закругленные углы */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    cursor: pointer; /* Курсор в виде указателя */
+    transition: opacity 0.3s; /* Плавный переход для появления/исчезновения */
+}
+
+.scroll-top-btn:hover {
+    background-color: #0056b3; /* Цвет фона при наведении */
+}
+
+.line {
+    height: 2px; /* Высота линии */
+    background-color: #2F73B6; /* Цвет линии */
+    width: 100vw; /* Ширина линии */
+    margin: 20px 0; /* Отступы сверху и снизу */
+}
+
+
+/* Стили для таблицы */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+
+.grid-container section {
+    border: 2px solid #2F73B6;
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Стили для каждой карточки */
+.grid-container section {
+    border: 2px solid #2F73B6;
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Стили для кнопок внутри карточек */
+.grid-container section .button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #4523ce;
+    color: #fff;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.grid-container section .button:hover {
+    background-color: #2e67f7;
+    box-shadow: 0 0 12px #67eacd;
+}
+
+.grid-container img {
+    width: 120px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.button {
+    padding: 5px 15px;
+}
+
+/* Скрыть боковое меню на экранах шириной менее 768px */
+@media (max-width: 767px) {
+    #one-page aside {
+        display: none;
+    }
+}
+
+
+.content {
+    display: inline-block;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-grow: 1;
+    grid-template-columns: 3;
+    grid-template-rows: 2;
+    z-index: 1;
+    padding-left: 20px;
+    padding-right: 70px;
+    padding-top: 30px;
+    grid-template-columns: 3;
+    grid-template-rows: 2;
+}
+
+.table-responsive, .map {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* плавная прокрутка на мобильных */
+}
+.table {
+    width: 100%;
+}
+h1, h2, p, .navbar {
+    word-wrap: break-word; /* Переносить длинные слова на новую строку */
+    overflow-x: hidden;
+}
+h2 {
+    overflow: hidden; /* Обрезать если они выходят за пределы */
+    text-overflow: ellipsis; /* Многоточие, если текст слишком длинный */
+    white-space: nowrap; /* Не разрешать переносы строк */
+}
+
+
+

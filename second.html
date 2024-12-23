@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="okno.js"></script>
+    <title>Document</title>
+    <!-- Подключение Bootstrap через CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <link
+        rel="icon"
+        sizes="16x16 32x32 48x48"
+        type="image/png"
+        href="pictures\949b4a6abbc47da3905dd3ce46cac226.png"
+    />
+
+    <style>
+        .btn, .button {
+            padding: 0.5em 2.1em; /* Поля по вертикали и горизонтали */
+            background-color: #4523ce; /* Цвет фона */
+            color: #fff; /* Белый цвет текста */
+            font-size: 0.9em; /* Размер текста */
+            border-width: 0; /* Убираем рамку */
+            margin-bottom: 1rem; /* Отступ снизу */
+        }
+    </style>
+    <style>
+        .bttn {
+            padding: 0.5em 3em; /* Поля по вертикали и горизонтали */
+            background-color: #4523ce; /* Цвет фона */
+            color: #fff; /* Белый цвет текста */
+            font-size: 0.9em; /* Размер текста */
+            border-width: 0; /* Убираем рамку */
+            margin-bottom: 1rem; /* Отступ снизу */
+        }
+    </style>
+</head>
+ <!-- Шапка сайта -->
+ <header class="container-fluid bg-secondary text-white p-3 text-center">
+    <div class="d-flex align-items-center justify-content-center">
+        <img src="https://www.pngplay.com/wp-content/uploads/15/Fanta-Orange-Logo-PNG-Clipart-Background.png" alt="Logo" width="70" height="60" class="me-3 border">
+        <div>
+            <p class="m-0 fw-bold">ЭФБО-04-23</p>
+            <p class="m-0">Беляевская Полина Викторовна</p>
+        </div>
+    </div>
+</header>
+<body id="one-page">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Главная</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="one.html">Первый семестр</a></li>
+                <li class="nav-item"><a class="nav-link" href="two.html">Второй семестр</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Дополнительно
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="second.html">Услуги</a>
+                        <a class="dropdown-item" href="avto.html">Авторизация</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <main class="main-content">
+        <main class="container mt-4">
+            <article class="d-flex">
+                <aside>
+                    <div class ="ykor">
+                        <p style="white-space: nowrap;">Навигация по страничке</p>
+                        <a href="#front">Фронтенд</a>
+                        <a href="#back">Бэкенд</a>
+                    </div>
+                </aside>
+                    <div class="vl"></div>
+                
+                <article>
+                <main class="main-content container mt-4">
+                    <div class="content">
+                        <h3>Разработка веб-приложений</h3>        
+                            <section>
+                                <div class="mask mask-one mask-one-frame">
+                                    <img  class="shadow-1" src="https://main-cdn.sbermegamarket.ru/big2/hlr-system/-2/02/08/20/71/86/9/100026736802b1.jpg" width="142" height="100" />
+                                </div>
+                                <p style="border:3px #2F73B6  solid;">Сайт-визитка</p>
+                                <button class="button open-modal" data-title="Сайт-визитка">Заказать</button>
+                            </section>
+                            <section>
+                                <div class="mask mask-one mask-one-frame">
+                                    <img class="shadow-1" src="https://avatars.mds.yandex.net/i?id=db9df72e02275943b117163af2ce901b55b63eb3-11026079-images-thumbs&n=13" width="120" height="100" />
+                                </div>
+                                <p style="border:3px #2F73B6 solid;">Корпоративный сайт</p>
+                                <button class="button open-modal" data-title="Корпоративный сайт">Заказать</button>
+                            </section>
+                            <section>
+                                <div class="mask mask-one mask-one-frame">
+                                    <img  class="shadow-1" src="https://avatars.mds.yandex.net/i?id=41c179d0845da7b1d456a66cb5ba086a_l-5276006-images-thumbs&n=13" width="142" height="100" />
+                                </div>
+                                <p style="border:3px #2F73B6  solid;">Интернет-магазин</p>
+                                <button class="button open-modal" data-title="Интернет-магазин">Заказать</button>
+                            </section>
+                    </div>
+                </main>
+            </article>
+        </article>
+        <div id="modal" class="modal">
+            <form id="contactForm" onsubmit="return handleSubmit(event)">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3 class="text-center mb-3">Заполните форму</h3>
+
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Электронная почта:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="+7 (999) 999-99-99">
+
+                    <label for="countries">Страна:</label>
+                    <select id="countries" name="countries">
+                        <option value="ru">Россия</option>
+                        <option value="us">США</option>
+                        <option value="de">Германия</option>
+                        <option value="fr">Франция</option>
+                        <option value="it">Италия</option>
+                        <option value="es">Испания</option>
+                        <option value="cn">Китай</option>
+                        <option value="jp">Япония</option>
+                        <option value="in">Индия</option>
+                        <option value="br">Бразилия</option>
+                    </select>
+
+                    <label for="date">Дата и время:</label>
+                    <input type="datetime-local" id="date" name="date">
+
+                    <label for="comments">Комментарии:</label>
+                    <textarea id="comments" name="comments"></textarea>
+
+                    <button type="submit">Отправить</button>
+                </div>
+            </form>
+        </div>
+    </main>
+<button class="scroll-top-btn" onclick="scrollToTop()">Наверх</button>
+<script>
+    // Показать кнопку при прокрутке вниз
+    window.onscroll = function() {
+        var scrollTopBtn = document.querySelector('.scroll-top-btn');
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            scrollTopBtn.style.display = "block";
+        } else {
+            scrollTopBtn.style.display = "none";
+        }
+    };
+
+    // Функция для прокрутки наверх
+    function scrollToTop() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+</script>
+</main>
+
+<footer>
+    <hr width="100%" color="#2F73B6" align="left" size="3">
+    <p align=center>Беляевска Полина Викторовна,2024<a target="_blank" href="https://t.me/belyaevskayya"><img src="https://avatars.mds.yandex.net/i?id=9ac6f72743b7a89704f45665480acd0696f98c97-6472467-images-thumbs&n=13" width="30" height="30"></a></p>
+    <hr width="100%" color="#2F73B6" align="left" size="3">
+</footer>
+</html>
+<script src="https://unpkg.com/imask"></script>
+<script src="okno.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+</html>
